@@ -2,19 +2,66 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kamień, papier, nożyce</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Signika:wght@700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/1fc1dc7a0b.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<div id="buttons">
-			<button id="button-rock">Kamień</button>
-			<button id="button-paper">Papier</button>
-			<button id="button-scissors">Nożyce</button>
-		</div>
-		<div id="messages"></div>
-	</div>
+	<section class="project-game">
+			<div class="container">
+				<div class="title-game">
+					<h1>Papier & Kamień & Nożyce</h1>
+				</div>
+					<div class="window">
+						<div class="rules">
+							<h2>Zasady gry</h2>
+							<p>W każdej turze obydwaj gracze, na umówiony sygnał, szybko wystawiają przed siebie dłoń, pokazującą symbol papieru, kamienia lub nożyc. Gracz, który pokazał silniejszy symbol, otrzymuje jeden punkt. W przypadku pokazania dwóch takich samych symboli następuje remis – punktu brak.</p>
+						</div>	
+						<div class="symbol-box">
+							<h3>Hierarchia symboli</h3>
+							<div class="wrapper">
+								<div class="box">
+									<i class="fa-solid fa-hand-scissors"></i>
+									<h4>Nożyce</h4>
+									<p>Nożyce są silniejsze od papieru, ponieważ go tną</p>
+								</div>
+								<div class="box">
+									<i class="fa-solid fa-hand"></i>
+									<h4>Papier</h4>
+									<p>Papier jest silniejszy od kamienia, ponieważ go owija</p>
+								</div>
+								<div class="box">
+									<i class="fa-solid fa-hand-back-fist"></i>
+									<h4>Kamień</h4>
+									<p>Kamień jest silniejszy od nożyc, ponieważ je tępi</p>
+								</div>
+							</div>
+							<div class="game">
+								<h4>Wybierz jeden z dostępnych symboli</h4>
+								<div class="button">
+									<div id="buttons">
+										<button id="button-rock">Kamień</button>
+										<button id="button-paper">Papier</button>
+										<button id="button-scissors">Nożyce</button>
+									</div>
+								</div>
+								<div class="result">
+									<h3>Wynik</h3>
+									<div id="messages"></div>
+								</div>						
+							</div>		
+						</div>
+					</div>
+			</div>
+	</section>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
+
 </body>
 </html>
